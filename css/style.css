@@ -1,0 +1,876 @@
+/*
+@font-face {
+	font-family: 'sun_federal_cu';
+	src:url('css/fonts/sun_federal_cu.eot?-8kjf28');
+	src:url('css/fonts/sun_federal_cu.eot?#iefix-8kjf28') format('embedded-opentype'),
+		url('css/fonts/sun_federal_cu.woff?-8kjf28') format('woff'),
+		url('css/fonts/sun_federal_cu.ttf?-8kjf28') format('truetype'),
+		url('css/fonts/sun_federal_cu.svg?-8kjf28#sun_federal_cu') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="sfcu-"], [class*=" sfcu-"] {
+	font-family: 'sun_federal_cu' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.sfcu-connect:before {
+	content: "\e600";
+}
+.sfcu-save:before {
+	content: "\e601";
+}
+.sfcu-resources:before {
+	content: "\e602";
+}
+.sfcu-sunny-1:before {
+	content: "\e603";
+}
+.sfcu-borrow:before {
+	content: "\e604";
+}
+.sfcu-business:before {
+	content: "\e605";
+}
+.sfcu-yourlife:before {
+	content: "\e606";
+}
+.sfcu-apply-loan:before {
+	content: "\e607";
+}
+
+*/
+/*
+===========================================
+
+	SCFU OVERRIDES
+
+===========================================
+*/
+.editmode #sfcu .v1 #ff-banner-wrap .slideshow-wrapper { height: 860px; }
+
+.pad-top { padding-top: 1em; }
+
+.ff-modal-inner br { display: none; height: 0; line-height: 0; }
+
+/* Site Notifications */
+/*
+#noty_center_layout_container {
+	li {
+		border: none;
+		box-shadow: 0 8px 20px rgba(0,0,0,.5);
+	}
+}
+
+.notification {
+	padding: 3rem;
+
+	h1, h2, h3, h4, h5, h6 {
+		color: $scu-yellow-ultralight;
+	}
+	a {
+		color: $scu-yellow;
+		transition: all 0.3s ease-in-out;
+		&:hover {
+			color: $scu-yellow-ultralight;
+		}
+	}
+
+}
+*/
+#sfcu .v1, .reveal-modal, .notification { /* h1, h2, h3, h4, h5, h6 { font-family: $font-museo-sans-rounded; font-style: normal; line-height: 1.2em; margin: 0; padding: .5em 0 .2em 0; color: $scu-orange; } h1 { font-weight: 100; font-size: 2.8em; } h2 { font-weight: 100; font-size: 2.2em; padding: 0 0 .2em 0; } h3 { font-weight: 100; font-size: 1.6em; padding: .8rem 0 .5rem 0; } h4 { font-weight: 700; font-size: 1.2em; } h5 { font-weight: 700; font-size: 1em; } h6 { font-weight: 700; font-size: .9em; } hr { margin: .8rem 0 .8rem 0; border-color: $scu-blue-ultralight; } a { text-decoration: none; transition: all 0.3s ease-in-out; } .red { color: $scu-red } .red-dark { color: $scu-red-dark } .orange { color: $scu-orange } .yellow { color: $scu-yellow } .blue { color: $scu-blue } .blue-dark { color: $scu-blue-dark } .green { color: $scu-green } .gray { color: $scu-gray } .lowercase { text-transform: none !important; } */ /* End .content */ }
+
+#sfcu .v1 .content, .reveal-modal .content, .notification .content { /* img { //border-radius: .8rem; } p { margin: 0; padding-top: .5rem; padding-bottom: .5rem; &.disclaimer { font-size: .8em; line-height: 1.2rem; padding: 0 0 .5rem 0; } &.button { a { color: $scu-white !important; } } } ul, ol { margin: 0 0 0 2rem; padding: 0 0 1rem 0; li { margin: 0; padding: .5rem 0 .5rem 0; } } ul { list-style-type: none; li { &:before { font-family: 'FontAwesome' !important; font-size: .7rem; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; content: "\f185"; color: $scu-orange; margin: 0 5px 0 -15px; padding: 0; } } } input, textarea { max-width: 400px !important; background-color: $scu-yellow-ultralight; transition: all 0.3s ease-in-out; &:hover { background-color: $scu-white; } } input[type="submit"] { font-weight: $bold; font-size: 1rem; padding: .6rem 1.8rem; color: $scu-white; border: none; border-radius: .8rem; background-color: $scu-blue; transition: all 0.3s ease-in-out; &:hover { background-color: $scu-green } } table { thead { tr { td { font-family: $font-museo-sans-rounded; font-weight: $bold; font-size: 1.1rem; color: $scu-blue-dark; background-color: $scu-blue-ultralight; } } } tbody { tr { td { font-family: $font-interface; font-size: .9rem; font-weight: $light; p { font-family: $font-interface; font-weight: $light; } //background-color: $scu-yellow-ultralight; } } } } */ }
+
+#sfcu .v1 .photo.full-width, .reveal-modal .photo.full-width, .notification .photo.full-width { width: 100%; }
+
+#sfcu .v1 { /* .library { .library-item { margin-bottom: .5rem; padding: 0 0 .5rem 0; border-bottom: 1px solid $scu-blue-ultralight; h3 { font-size: 1.2rem; font-weight: $medium; } p { padding: 0 0 .5rem 0; } .icon { padding-top: .5rem; } &:last-of-type { border-bottom: none; } } } .library-list { ul.nav { list-style-type: none; margin: 0; padding: 1.5rem 0 0 0; font-size: .9rem; line-height: 1.2rem; li { margin: 0; padding: 0; border-bottom: 1px solid $scu-blue-ultralight; &:last-child { border-bottom: none; } a { display: block; width: 100%; height: 100%; padding: .3rem; &:hover { background-color: $scu-green-ultralight; } } } } } */ }
+
+#sfcu .v1 form span.no_counter { color: #f4202b; }
+
+#sfcu .v1 .thumb-copy { margin-top: .5rem; margin-bottom: .5rem; padding-top: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #e2f2f6; }
+
+#sfcu .v1 .thumb-copy.two-col .thumb { border-left: 1px solid #e2f2f6; }
+
+#sfcu .v1 .thumb-copy.two-col .photo { height: 100px; }
+
+#sfcu .v1 .thumb-copy.two-col .photo.portrait { height: 150px; }
+
+#sfcu .v1 .thumb-copy:last-of-type { border-bottom: none; }
+
+#sfcu .v1 .thumb-copy .photo { height: 130px; overflow: hidden; }
+
+#sfcu .v1 .thumb-copy .photo img { width: 100%; height: auto; }
+
+#sfcu .v1 .thumb-copy .copy { float: left; }
+
+#sfcu .v1 .content-columns { padding-top: .5rem; padding-bottom: .5rem; }
+
+#sfcu .v1 .content-columns .photo { height: 130px; }
+
+#sfcu .v1 .thumb-copy .photo, #sfcu .v1 .content-columns .photo, #sfcu .v1 .library .photo { width: 100%; border-radius: 1rem; }
+
+#sfcu .v1 dl.accordion dd { border-bottom: 1px solid white; }
+
+#sfcu .v1 dl.accordion dd > a { font-family: "museo-sans-rounded", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; color: #001863; background-color: rgba(226, 242, 246, 0.5); }
+
+#sfcu .v1 dl.accordion dd > a:hover { background-color: #e2f2f6; }
+
+#sfcu .v1 a.magic_toggle_remote_controller { color: #001863; }
+
+#sfcu .v1 a.magic_toggle_remote_controller:hover { color: #009234; }
+
+#sfcu .v1 .center { width: 100%; text-align: center; }
+
+#sfcu .v1 .center img { display: inline-block; }
+
+#sfcu .v1 .sbs_external_icon::after { margin-left: 5px; }
+
+/*
+==================================================
+
+		Main Content Area
+
+==================================================
+*/
+#sfcu .v1 { /* End ff-main-wrap */ /* End ff-main */ }
+
+#sfcu .v1 #ff-main-wrap { z-index: 4; position: absolute; top: 610px; left: 0; width: 100%; }
+
+#sfcu .v1 #ff-main-wrap.sidebar-right { position: relative; top: 0px; padding-top: 30px; }
+
+#sfcu .v1 #ff-main { z-index: 3; position: relative; min-height: 500px; border-top-radius: 1.2em; background-color: white; padding-top: 0; padding-bottom: 2rem; }
+
+#sfcu .v1 #ff-main-content-left { min-height: 500px; padding-top: 1.5em; padding-right: 1.2em; padding-bottom: 40px; padding-left: 1.2em; border-right: 1px solid #e2f2f6; }
+
+/* ======= End Main Content Area ======= */
+#sfcu .v1 .bg-color { padding-top: 1.2rem; padding-bottom: 1.2rem; }
+
+#sfcu .v1 .bg-color:nth-of-type(odd) { border-left-radius: 1.5em; }
+
+#sfcu .v1 .bg-color:nth-of-type(even) { border-right-radius: 1.5em; }
+
+#sfcu .v1 .bg-color.blue-orange:nth-of-type(odd) { border-right: 0.5rem solid white; background-color: #e2f2f6; }
+
+#sfcu .v1 .bg-color.blue-orange:nth-of-type(odd) h1, #sfcu .v1 .bg-color.blue-orange:nth-of-type(odd) h2, #sfcu .v1 .bg-color.blue-orange:nth-of-type(odd) h3, #sfcu .v1 .bg-color.blue-orange:nth-of-type(odd) h4, #sfcu .v1 .bg-color.blue-orange:nth-of-type(odd) h5, #sfcu .v1 .bg-color.blue-orange:nth-of-type(odd) h6, #sfcu .v1 .bg-color.blue-orange:nth-of-type(odd) i, #sfcu .v1 .bg-color.blue-orange:nth-of-type(odd) a { color: #004a9a; }
+
+#sfcu .v1 .bg-color.blue-orange:nth-of-type(even) { border-left: 0.5rem solid white; background-color: #fef0e1; }
+
+#sfcu .v1 .bg-color.blue-orange:nth-of-type(even) h1, #sfcu .v1 .bg-color.blue-orange:nth-of-type(even) h2, #sfcu .v1 .bg-color.blue-orange:nth-of-type(even) h3, #sfcu .v1 .bg-color.blue-orange:nth-of-type(even) h4, #sfcu .v1 .bg-color.blue-orange:nth-of-type(even) h5, #sfcu .v1 .bg-color.blue-orange:nth-of-type(even) h6, #sfcu .v1 .bg-color.blue-orange:nth-of-type(even) a, #sfcu .v1 .bg-color.blue-orange:nth-of-type(even) i { color: #ff8e1b; }
+
+#sfcu .v1 .bg-color ul { padding-left: 0 !important; }
+
+#sfcu .v1 .bg-color.orange { background-color: #ff8e1b; }
+
+#sfcu .v1 .bg-color.orange h1, #sfcu .v1 .bg-color.orange h2, #sfcu .v1 .bg-color.orange h3, #sfcu .v1 .bg-color.orange h4, #sfcu .v1 .bg-color.orange h5, #sfcu .v1 .bg-color.orange h6, #sfcu .v1 .bg-color.orange p, #sfcu .v1 .bg-color.orange li { color: #fff; }
+
+#sfcu .v1 .bg-color.red { background-color: #f4202b; }
+
+#sfcu .v1 .bg-color.red h1, #sfcu .v1 .bg-color.red h2, #sfcu .v1 .bg-color.red h3, #sfcu .v1 .bg-color.red h4, #sfcu .v1 .bg-color.red h5, #sfcu .v1 .bg-color.red h6, #sfcu .v1 .bg-color.red p, #sfcu .v1 .bg-color.red li { color: #fff; }
+
+#sfcu .v1 .bg-color.red-dark { background-color: #b82527; }
+
+#sfcu .v1 .bg-color.red-dark h1, #sfcu .v1 .bg-color.red-dark h2, #sfcu .v1 .bg-color.red-dark h3, #sfcu .v1 .bg-color.red-dark h4, #sfcu .v1 .bg-color.red-dark h5, #sfcu .v1 .bg-color.red-dark h6, #sfcu .v1 .bg-color.red-dark p, #sfcu .v1 .bg-color.red-dark li { color: #fff; }
+
+#sfcu .v1 .bg-color.red-ultralight { background-color: #fef0e1; }
+
+#sfcu .v1 .bg-color.red-ultralight h1, #sfcu .v1 .bg-color.red-ultralight h2, #sfcu .v1 .bg-color.red-ultralight h3, #sfcu .v1 .bg-color.red-ultralight h4, #sfcu .v1 .bg-color.red-ultralight h5, #sfcu .v1 .bg-color.red-ultralight h6 { color: #f4202b; }
+
+#sfcu .v1 .bg-color.green { background-color: #009234; }
+
+#sfcu .v1 .bg-color.green h1, #sfcu .v1 .bg-color.green h2, #sfcu .v1 .bg-color.green h3, #sfcu .v1 .bg-color.green h4, #sfcu .v1 .bg-color.green h5, #sfcu .v1 .bg-color.green h6, #sfcu .v1 .bg-color.green p, #sfcu .v1 .bg-color.green li { color: #fff; }
+
+#sfcu .v1 .bg-color.green-ultralight { background-color: #d8ecd3; }
+
+#sfcu .v1 .bg-color.green-ultralight h1, #sfcu .v1 .bg-color.green-ultralight h2, #sfcu .v1 .bg-color.green-ultralight h3, #sfcu .v1 .bg-color.green-ultralight h4, #sfcu .v1 .bg-color.green-ultralight h5, #sfcu .v1 .bg-color.green-ultralight h6 { color: #009234; }
+
+#sfcu .v1 .bg-color.gray { background-color: #556770; }
+
+#sfcu .v1 .bg-color.gray h1, #sfcu .v1 .bg-color.gray h2, #sfcu .v1 .bg-color.gray h3, #sfcu .v1 .bg-color.gray h4, #sfcu .v1 .bg-color.gray h5, #sfcu .v1 .bg-color.gray h6, #sfcu .v1 .bg-color.gray p, #sfcu .v1 .bg-color.gray li { color: #fff; }
+
+#sfcu .v1 .bg-color.blue { background-color: #004a9a; }
+
+#sfcu .v1 .bg-color.blue h1, #sfcu .v1 .bg-color.blue h2, #sfcu .v1 .bg-color.blue h3, #sfcu .v1 .bg-color.blue h4, #sfcu .v1 .bg-color.blue h5, #sfcu .v1 .bg-color.blue h6, #sfcu .v1 .bg-color.blue p, #sfcu .v1 .bg-color.blue li { color: #fff; }
+
+#sfcu .v1 .bg-color.blue-dark { background-color: #001863; }
+
+#sfcu .v1 .bg-color.blue-dark h1, #sfcu .v1 .bg-color.blue-dark h2, #sfcu .v1 .bg-color.blue-dark h3, #sfcu .v1 .bg-color.blue-dark h4, #sfcu .v1 .bg-color.blue-dark h5, #sfcu .v1 .bg-color.blue-dark h6, #sfcu .v1 .bg-color.blue-dark p, #sfcu .v1 .bg-color.blue-dark li { color: #fff; }
+
+#sfcu .v1 .bg-color.blue-light { background-color: #00b1bd; }
+
+#sfcu .v1 .bg-color.blue-light h1, #sfcu .v1 .bg-color.blue-light h2, #sfcu .v1 .bg-color.blue-light h3, #sfcu .v1 .bg-color.blue-light h4, #sfcu .v1 .bg-color.blue-light h5, #sfcu .v1 .bg-color.blue-light h6, #sfcu .v1 .bg-color.blue-light p, #sfcu .v1 .bg-color.blue-light li { color: #fff; }
+
+#sfcu .v1 .bg-color.blue-ultralight { background-color: #e2f2f6; }
+
+#sfcu .v1 .bg-color.blue-ultralight h1, #sfcu .v1 .bg-color.blue-ultralight h2, #sfcu .v1 .bg-color.blue-ultralight h3, #sfcu .v1 .bg-color.blue-ultralight h4, #sfcu .v1 .bg-color.blue-ultralight h5, #sfcu .v1 .bg-color.blue-ultralight h6 { color: #004a9a; }
+
+#sfcu .v1 .button { min-width: 48%; margin: .5rem .9rem .5rem 0; padding: .8rem .5rem; font-family: "museo-sans", "interface", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+
+#sfcu .v1 .button:nth-of-type(odd) { margin-right: .9rem; }
+
+#sfcu .v1 .button i { margin-left: .5rem; }
+
+#sfcu .v1 .f-dropdown { width: 600px; }
+
+/*
+==================================================
+
+		Sidebar Area
+
+==================================================
+*/
+#sfcu .v1 { /* Ask Sunny */ /* End Ask Sunny */ }
+
+#sfcu .v1 .ask-sunny { margin-bottom: 0; padding-top: .5em; padding-bottom: .2em; border-bottom: 1px solid #e2f2f6; }
+
+#sfcu .v1 .ask-sunny .title { padding-bottom: .5em; }
+
+#sfcu .v1 .ask-sunny .title h3 { font-weight: 700; font-size: 1.4em; padding-top: 0; padding-bottom: .5em; }
+
+#sfcu .v1 .ask-sunny .icon { padding-top: .8em; }
+
+#sfcu .v1 .ask-sunny form { margin: 0; padding: 0; }
+
+#sfcu .v1 .ask-sunny input[type="text"] { width: 185px; }
+
+#sfcu .v1 .topics { padding-top: 1.2em; }
+
+#sfcu .v1 .topics button { border-radius: 0; }
+
+#sfcu .v1 ul.f-dropdown { list-style-type: none; margin-left: 0; width: 100%; max-height: none; height: auto; background: white; border: solid 1px #e2f2f6; font-size: 16px; z-index: 99; margin-top: 2px; max-width: 200px; box-shadow: rgba(0, 0, 0, 0.2) 0 8px 8px; }
+
+#sfcu .v1 ul.f-dropdown li { list-style-type: none; /* 2nd Level */ }
+
+#sfcu .v1 ul.f-dropdown li a { font-weight: 400 !important; color: #556770; background-color: white; }
+
+#sfcu .v1 ul.f-dropdown li a:hover { background-color: #e2f2f6; }
+
+#sfcu .v1 ul.f-dropdown li a.nav-selected { color: #001863; background-color: #e2f2f6; }
+
+#sfcu .v1 ul.f-dropdown li ul { margin-left: 0; padding-left: 0; background: white; list-style-type: none; }
+
+#sfcu .v1 ul.f-dropdown li ul li { margin-left: 0; padding-left: 0; list-style-type: none; }
+
+#sfcu .v1 ul.f-dropdown li ul li a { font-weight: 400; margin-left: 0; padding-left: 1.5em; color: #556770; background-color: white; }
+
+/* =========== End Sidebar Area ============= */
+/* End Basic Styles */
+/* Media Queries */
+@media only screen and (max-width: 40em) { /* Mobile */
+  #banking, #rates, #social { display: none !important; }
+  #home #sfcu .v1 #ff-main-wrap { box-shadow: rgba(0, 0, 0, 0.5) 0 0 20px; }
+  #right_sidebar #sfcu .v1 #ff-main-wrap { box-shadow: 0; }
+  /*
+===========================================
+
+	Header Area
+
+===========================================
+*/
+  #sfcu .v1 #ff-header-wrap { z-index: 5; position: absolute; top: 0; left: 0; width: 100%; border-top: 0.3rem solid #001863; background-color: white; box-shadow: rgba(0, 0, 0, 0.5) 0 5px 20px; }
+  #sfcu .v1 #ff-header-wrap .logo { padding-top: .5rem; padding-right: 0; padding-bottom: .8rem; text-align: center; }
+  #sfcu .v1 #ff-header-wrap .logo img { display: inline-block; }
+  #sfcu .v1 #ff-header-wrap .mobile-menu .f-dropdown { width: auto; }
+  #sfcu .v1 #ff-header-wrap .mobile-menu ul#top-nav { margin: 0; padding: .8rem 0 0 0; }
+  #sfcu .v1 #ff-header-wrap .mobile-menu ul#top-nav li { list-style-type: none; margin: 0; padding: 0 0 .3rem 0; }
+  #sfcu .v1 #ff-header-wrap .mobile-menu ul#top-nav li span.phone, #sfcu .v1 #ff-header-wrap .mobile-menu ul#top-nav li span.loan { font-weight: 900 !important; font-size: .9rem; color: #001863; }
+  #sfcu .v1 #ff-header-wrap .mobile-menu ul#top-nav li span.phone a, #sfcu .v1 #ff-header-wrap .mobile-menu ul#top-nav li span.loan a { color: #001863; }
+  #sfcu .v1 #ff-header-wrap .mobile-menu ul#top-nav li span.phone a:hover, #sfcu .v1 #ff-header-wrap .mobile-menu ul#top-nav li span.loan a:hover { color: #009234; }
+  #sfcu .v1 #ff-header-wrap .mobile-menu ul#top-nav li span.phone:before { display: inline-block; vertical-align: middle; font-family: 'FontAwesome' !important; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; cursor: pointer; font-weight: normal; font-size: 1.5rem; line-height: 1; margin: 0 .5rem 0 .3rem; padding: 0; content: "\f095"; color: #009234; }
+  #sfcu .v1 #ff-header-wrap .mobile-menu ul#top-nav li span.loan:before { display: inline-block; vertical-align: middle; font-family: "sun_federal_cu" !important; font-weight: normal; font-size: 1.8rem; line-height: 1; margin: 0 .2rem 0 0; padding: 0; content: "\e607"; color: #009234; }
+  #sfcu .v1 #ff-header-wrap .mobile-menu ul#top-nav button.dropdown { width: 100%; margin: .3rem 0 0 0; padding: .3em 0 .3rem .8rem; background-color: #e2f2f6; border: 1px solid #c8e6ed; font-family: "museo-sans", "interface", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-weight: 700 !important; color: #556770; text-align: left; }
+  #sfcu .v1 #ff-header-wrap .mobile-menu ul#top-nav button.dropdown:before { position: absolute; content: ""; width: 0; height: 0; display: block; border-style: solid; border-color: #fff transparent transparent transparent; border-color: #82a4b3 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0); border-color: #82a4b3 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0); }
+  #sfcu .v1 #ff-header-wrap .mobile-menu ul#top-nav ul#top-nav-dropdown { list-style-type: none; width: 100%; margin-left: 0; max-height: none; height: auto; background: white; border: solid 1px #e2f2f6; font-size: .8rem; z-index: 99; box-shadow: rgba(0, 0, 0, 0.2) 0 8px 8px; }
+  #sfcu .v1 #ff-header-wrap .mobile-menu ul#top-nav ul#top-nav-dropdown li { list-style-type: none; /* 2nd Level */ }
+  #sfcu .v1 #ff-header-wrap .mobile-menu ul#top-nav ul#top-nav-dropdown li:last-child { display: none; }
+  #sfcu .v1 #ff-header-wrap .mobile-menu ul#top-nav ul#top-nav-dropdown li a { font-weight: 700; color: #556770; background-color: white; }
+  #sfcu .v1 #ff-header-wrap .mobile-menu ul#top-nav ul#top-nav-dropdown li a:hover { background-color: #e2f2f6; }
+  #sfcu .v1 #ff-header-wrap .mobile-menu ul#top-nav ul#top-nav-dropdown li a.nav-selected { color: #001863; background-color: #e2f2f6; }
+  #sfcu .v1 #ff-header-wrap .mobile-menu ul#top-nav ul#top-nav-dropdown li ul { margin-left: 0; padding-left: 0; background: white; list-style-type: none; }
+  #sfcu .v1 #ff-header-wrap .mobile-menu ul#top-nav ul#top-nav-dropdown li ul li { margin-left: 0; padding-left: 0; list-style-type: none; }
+  #sfcu .v1 #ff-header-wrap .mobile-menu ul#top-nav ul#top-nav-dropdown li ul li a { font-weight: 400; margin-left: 0; padding-left: 1.5em; color: #556770; background-color: white; }
+  #sfcu .v1 #ff-header-wrap .contain-to-grid { background-color: transparent; }
+  #sfcu .v1 #ff-header-wrap .contain-to-grid nav.top-bar { background-color: #001863; /* End &.expanded */ }
+  #sfcu .v1 #ff-header-wrap .contain-to-grid nav.top-bar ul.title-area { text-align: center; }
+  #sfcu .v1 #ff-header-wrap .contain-to-grid nav.top-bar ul.title-area:hover { background-color: #009234; }
+  #sfcu .v1 #ff-header-wrap .contain-to-grid nav.top-bar.expanded ul.title-area { background-color: #009234; }
+  #sfcu .v1 #ff-header-wrap .contain-to-grid nav.top-bar.expanded section.top-bar-section ul li a { font-family: "museo-sans-rounded", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-weight: 700 !important; font-size: .8rem; text-transform: uppercase; }
+  #sfcu .v1 #ff-header-wrap .contain-to-grid nav.top-bar.expanded section.top-bar-section ul li a i.fa { font-size: 1.5rem; color: white; margin-right: .5rem; }
+  #sfcu .v1 #ff-header-wrap .contain-to-grid nav.top-bar.expanded .toggle-topbar a { color: white; }
+  #sfcu .v1 #ff-header-wrap .contain-to-grid nav.top-bar.expanded .toggle-topbar a span { color: white; }
+  #sfcu .v1 #ff-header-wrap .contain-to-grid nav.top-bar .toggle-topbar.menu-icon { top: 0; left: 0; right: 0; width: 100%; padding: 0 0 0 0; margin: 0 0 0 0; }
+  #sfcu .v1 #ff-header-wrap .contain-to-grid nav.top-bar .toggle-topbar.menu-icon a { font-family: "museo-sans-rounded", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-weight: 900 !important; font-size: .8rem; letter-spacing: 2px; text-transform: uppercase; color: white; width: auto; height: auto; padding: 1rem 0; text-indent: 0; line-height: 1; }
+  #sfcu .v1 #ff-header-wrap dl.accordion dd { border-top: 1px solid #001863; border-bottom: none; }
+  #sfcu .v1 #ff-header-wrap dl.accordion dd:last-child { border-bottom: 1px solid #001863; }
+  #sfcu .v1 #ff-header-wrap dl.accordion dd h3 { display: none; }
+  #sfcu .v1 #ff-header-wrap dl.accordion dd table tbody tr:nth-of-type(even) { background-color: #e2f2f6; }
+  #sfcu .v1 #ff-header-wrap dl.accordion dd .content ul { display: block; margin: 0 0 0 2rem; padding: .5rem 0; }
+  #sfcu .v1 #ff-header-wrap dl.accordion dd .content ul li { display: block; list-style-type: none; background-image: none; margin: 0; padding-bottom: 1rem; color: #556770; }
+  #sfcu .v1 #ff-header-wrap dl.accordion dd .content ul li:before { content: none; }
+  #sfcu .v1 #ff-header-wrap dl.accordion dd .content ul li a { display: inline-block; margin: 0; padding: .3rem 0; font-family: "museo-sans-rounded", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-weight: 900 !important; font-size: .9rem; line-height: 1; letter-spacing: .1rem; text-decoration: none; text-transform: uppercase; color: #001863; transition: all .3s ease-in-out; }
+  #sfcu .v1 #ff-header-wrap dl.accordion dd .content ul li a:hover { color: #00b1bd; }
+  #sfcu .v1 #ff-header-wrap dl.accordion dd .content ul li a img { display: inline-block; margin-right: .8rem; vertical-align: middle; border-radius: 0; }
+  #sfcu .v1 #ff-header-wrap dl.accordion dd > a { font-family: "museo-sans-rounded", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-weight: 900 !important; font-size: .8rem; letter-spacing: 2px; text-transform: uppercase; text-align: center; color: white; padding: .5rem 1rem; background-color: #004a9a; }
+  #sfcu .v1 #ff-header-wrap dl.accordion dd > a:hover { background-color: #009234; color: white; }
+  /* ============= End Header Area =============== */
+  /*
+===========================================
+
+	Banner / Feature Area
+
+===========================================
+*/
+  #sfcu .v1 { /* End ff-banner-wrap */ }
+  #sfcu .v1 #ff-banner-wrap { z-index: 1; top: 0; left: 0; overflow: hidden; position: relative; height: auto; padding-top: 300px; padding-bottom: 20px; /* End #ff-banner */ }
+  #sfcu .v1 #ff-banner-wrap.home { position: relative; top: 290px; width: 100%; height: 320px; margin: 0; padding: 0; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner, #sfcu .v1 #ff-banner-wrap .slideshow-wrapper, #sfcu .v1 #ff-banner-wrap .orbit-overlay, #sfcu .v1 #ff-banner-wrap .orbit-container, #sfcu .v1 #ff-banner-wrap .orbit-slides-container, #sfcu .v1 #ff-banner-wrap .orbit-slides-container li { width: 100%; height: 100%; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner { /* End .bg-color */ }
+  #sfcu .v1 #ff-banner-wrap #ff-banner a.button { text-align: center !important; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .banner-title h1 { text-transform: uppercase; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .banner-photo { margin-bottom: 1em; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .banner-photo .photo { height: 200px; border-radius: 1.2em; overflow: hidden; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .button { display: block; max-width: 40%; margin: 0 auto; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .banner-description .button { margin: 0 1rem 1rem 0; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item { width: 100%; height: 100%; padding-bottom: 1rem; background-color: rgba(255, 255, 255, 0.9); overflow: hidden; border-radius: 1.2em; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .header { text-align: center; background-color: #ff8e1b; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .header h3 { font-size: 1rem; font-weight: 900 !important; letter-spacing: .2rem; text-transform: uppercase; color: white; margin: 0; padding-top: .4rem; padding-bottom: .3rem; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .header h3 a { color: white; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .header h3 a:hover { color: #fff3d1; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .icon { padding-top: .5rem; padding-bottom: .5rem; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .disclosure { padding-top: .5rem; text-align: center; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .disclosure p { font-size: .8rem; margin: 0; padding: 0; color: rgba(85, 103, 112, 0.8); }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .term { text-align: center; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .term p { font-family: "museo-sans-rounded", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-size: 3.5rem; font-weight: 100 !important; line-height: 1; margin: 0; padding-top: .3rem; padding-bottom: .5rem; color: #001863; text-shadow: 0 3px 8px rgba(85, 103, 112, 0.5); }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .content { text-align: center; padding-left: 1rem; padding-right: 1rem; padding-bottom: 1rem; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .content ul, #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .content ol { display: block; width: 75%; text-align: left; margin: 0 auto; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .content ul li, #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .content ol li { text-align: left; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .link { text-align: center; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .link a.button { display: block; float: none; font-family: "museo-sans-rounded", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-weight: 900 !important; font-size: .9rem; letter-spacing: .2rem; text-transform: uppercase; color: white; max-width: none; margin: 0 0 1rem 0; padding-top: .5rem; padding-bottom: .5rem; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .clear { padding: 1px; line-height: 1; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper { /* .photo { height: 1000px; } */ }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .orbit-prev, #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .orbit-next { display: none; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .image { position: absolute; top: 0; left: 0; z-index: 1; width: 100%; height: 100%; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container img { width: 100%; height: auto; margin: 0; padding: 0; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .orbit-caption { z-index: 2; bottom: 0; width: 100%; margin: 0; padding: 0 0 0 0; background: none; border: 0 solid; box-shadow: none; transition: all 0.3s ease-in-out; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .caption-bg { padding-top: .5rem; padding-bottom: .5rem; background-color: rgba(255, 255, 255, 0.8); border-radius: 0; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .caption-bg h2 { font-size: 1.8rem; font-weight: 100; line-height: 2rem; letter-spacing: -2px; margin: 0; padding: .2rem 0 .2rem 0; color: #001863; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .caption-bg h2 a { color: #001863; transition: all 0.3s ease-in-out; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .caption-bg h2 a:hover { color: #009234; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .description { display: none; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .orbit-timer { position: relative; top: -315px; right: 0px; width: 100%; height: 3px; z-index: 998; margin: 0 auto; background-color: white; background-color: rgba(255, 255, 255, 0.5); }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .orbit-timer .orbit-progress { top: 0px; right: 0px; background-color: #ffce00; background-color: #ffce00; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .orbit-timer > span { display: none; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .orbit-bullets-container { display: none; }
+  /* ============ End Banner Area ============== */
+  /*
+==================================================
+
+		Homepage
+
+==================================================	
+*/
+  #sfcu .v1 { /* Ask Sunny */ /* End Ask Sunny */ }
+  #sfcu .v1 .home-sub-header h1, #sfcu .v1 .home-sub-header h2, #sfcu .v1 .home-sub-header h3, #sfcu .v1 .home-sub-header h4, #sfcu .v1 .home-sub-header h5, #sfcu .v1 .home-sub-header h6 { font-size: .8rem; font-weight: 900 !important; line-height: 1; text-transform: uppercase; letter-spacing: .2rem; padding: .8rem 0 0 0; }
+  #sfcu .v1 .home-sub-header h1 a, #sfcu .v1 .home-sub-header h2 a, #sfcu .v1 .home-sub-header h3 a, #sfcu .v1 .home-sub-header h4 a, #sfcu .v1 .home-sub-header h5 a, #sfcu .v1 .home-sub-header h6 a { color: white; }
+  #sfcu .v1 #ff-three-column-left-header, #sfcu .v1 #ff-three-column-center-header, #sfcu .v1 #ff-three-column-right-header { height: 35px !important; }
+  #sfcu .v1 #ff-three-column-left-header { border-top-left-radius: 0; }
+  #sfcu .v1 #ff-three-column-right-header { border-top-right-radius: 0; }
+  #sfcu .v1 .ask-sunny { margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #e2f2f6; }
+  #sfcu .v1 .ask-sunny .title { padding-top: 1em; padding-right: .5em; padding-bottom: 0; }
+  #sfcu .v1 .ask-sunny .title h3 { color: #ff8e1b; }
+  #sfcu .v1 .ask-sunny img.icon { display: inline-block; margin-right: .5em; }
+  #sfcu .v1 .ask-sunny form { margin: 0; padding: 0; }
+  #sfcu .v1 .ask-sunny input[type="text"] { display: inline-block; width: 210px; font-weight: 700; font-size: 1rem; color: #ff8e1b; background-color: #fff3d1; border: 1px solid #ffe8ab; box-shadow: none; }
+  #sfcu .v1 .ask-sunny input#ask-sunny::-webkit-input-placeholder, #sfcu .v1 .ask-sunny input#ask-sunny:-moz-placeholder, #sfcu .v1 .ask-sunny input#ask-sunny::-moz-placeholder, #sfcu .v1 .ask-sunny input#ask-sunny:-ms-input-placeholder { color: #ff8e1b; }
+  #sfcu .v1 .ask-sunny input.ccm-search-block-submit.button.secondary.small { display: inline-block; margin: 0; padding: 0; width: 40px; min-width: 40px; max-width: 40px; height: 30px; text-indent: -9999px; border: none; background: url(../images/icon-asksunny-search.png) center center transparent no-repeat !important; }
+  /* =============== End Homepage =============== */
+  /* Landing Page */
+  #sfcu .v1 .landing-container { position: relative; margin-top: -3.7rem; }
+  #sfcu .v1 .landing { min-height: 300px; /* &:nth-of-type(4) .header { background-color: $scu-yellow; } &:nth-of-type(5) .header { background-color: $scu-blue; } &:nth-of-type(6) .header { background-color: $scu-green; } &:last-of-type .header { } */ }
+  #sfcu .v1 .landing .thumb a { background-color: #b82527; }
+  #sfcu .v1 .landing .header { background-color: #b82527; border-top-radius: .8em; }
+  #sfcu .v1 .landing:nth-of-type(3n+1) .thumb a { background-color: #b82527; }
+  #sfcu .v1 .landing:nth-of-type(3n+1) .header { background-color: #b82527; }
+  #sfcu .v1 .landing:nth-of-type(3n+2) .thumb a { background-color: #f4202b; }
+  #sfcu .v1 .landing:nth-of-type(3n+2) .header { background-color: #f4202b; }
+  #sfcu .v1 .landing:nth-of-type(3n+3) .thumb a { background-color: #ff8e1b; }
+  #sfcu .v1 .landing:nth-of-type(3n+3) .header { background-color: #ff8e1b; }
+  #sfcu .v1 .landing:last-child { float: left; }
+  #sfcu .v1 .landing.four:nth-of-type(1) .thumb a { background-color: #b82527; }
+  #sfcu .v1 .landing.four:nth-of-type(1) .header { background-color: #b82527; border-top-left-radius: .8em; }
+  #sfcu .v1 .landing.four:nth-of-type(2) .thumb a { background-color: #f4202b; }
+  #sfcu .v1 .landing.four:nth-of-type(2) .header { background-color: #f4202b; }
+  #sfcu .v1 .landing.four:nth-of-type(3) .thumb a { background-color: #ff8e1b; }
+  #sfcu .v1 .landing.four:nth-of-type(3) .header { background-color: #ff8e1b; border-top-right-radius: 0; }
+  #sfcu .v1 .landing.four:nth-of-type(4) .thumb a { background-color: #ffce00; }
+  #sfcu .v1 .landing.four:nth-of-type(4) .header { background-color: #ffce00; border-top-left-radius: 0; border-top-right-radius: .8em; }
+  #sfcu .v1 .landing .header { min-height: 35px; }
+  #sfcu .v1 .landing .header h3 { font-size: 1em; font-weight: 700; text-transform: none; letter-spacing: 0; margin: 0; padding: .7rem 0 .4rem 0; }
+  #sfcu .v1 .landing .header h3 a { color: white; }
+  #sfcu .v1 .landing .header h3 a:hover { color: #fff3d1; }
+  #sfcu .v1 .landing .thumb { padding-top: 1rem; }
+  #sfcu .v1 .landing .thumb a { display: block; width: 100%; height: 100%; overflow: hidden; }
+  #sfcu .v1 .landing .thumb a img { border-radius: 0; opacity: 1; transition: all 0.5s ease-in-out; }
+  #sfcu .v1 .landing .thumb a:hover img { opacity: .6; transform: rotate(-2deg) scale(1.2); }
+  #sfcu .v1 .landing .copy { padding-top: 1rem; padding-bottom: 1rem; }
+  /* End Landing Page */
+  #sfcu .v1 .button { width: 100%; margin: .5rem .9rem .5rem 0; padding: .8rem .5rem; font-family: "museo-sans", "interface", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+  #sfcu .v1 .button:nth-of-type(odd) { margin-right: .9rem; }
+  #sfcu .v1 .button i { margin-left: .5rem; }
+  /*
+==================================================
+
+		Sidebar Area
+
+==================================================	
+*/
+  #sfcu .v1 { /* End #ff-sidebar-right */ }
+  #sfcu .v1 #ff-sidebar-right .ff-sidebar { padding: 0 .2em 0 0; background-color: transparent; /* Ask Sunny */ /* End Ask Sunny */ }
+  #sfcu .v1 #ff-sidebar-right .ff-sidebar .ask-sunny { margin-bottom: 0; padding-top: .5em; padding-bottom: .2em; border-bottom: 1px solid #e2f2f6; }
+  #sfcu .v1 #ff-sidebar-right .ff-sidebar .ask-sunny .title { padding-left: 0; padding-bottom: .5em; }
+  #sfcu .v1 #ff-sidebar-right .ff-sidebar .ask-sunny .title h3 { font-weight: 700; font-size: 1.4em; padding-top: 0; padding-bottom: .5em; }
+  #sfcu .v1 #ff-sidebar-right .ff-sidebar .ask-sunny .icon { padding-right: 0; text-align: center; }
+  #sfcu .v1 #ff-sidebar-right .ff-sidebar .ask-sunny .icon img { text-align: center; display: inline-block; }
+  #sfcu .v1 #ff-sidebar-right .ff-sidebar .ask-sunny form { margin: 0; padding: 0; }
+  #sfcu .v1 #ff-sidebar-right .ff-sidebar .ask-sunny input[type="text"] { width: 235px; }
+  #sfcu .v1 #ff-sidebar-right .ff-sidebar .topics { padding-top: 1.2em; }
+  #sfcu .v1 #ff-sidebar-right .ff-sidebar .topics button { border-radius: 0; }
+  #sfcu .v1 #ff-sidebar-right .ff-sidebar ul.f-dropdown { list-style-type: none; margin-left: 0; width: 100%; max-height: none; height: auto; background: white; border: solid 1px #e2f2f6; font-size: 16px; z-index: 99; margin-top: 2px; max-width: 200px; box-shadow: rgba(0, 0, 0, 0.2) 0 8px 8px; }
+  #sfcu .v1 #ff-sidebar-right .ff-sidebar ul.f-dropdown li { list-style-type: none; /* 2nd Level */ }
+  #sfcu .v1 #ff-sidebar-right .ff-sidebar ul.f-dropdown li a { font-weight: 700; color: #556770; background-color: white; }
+  #sfcu .v1 #ff-sidebar-right .ff-sidebar ul.f-dropdown li a:hover { background-color: #e2f2f6; }
+  #sfcu .v1 #ff-sidebar-right .ff-sidebar ul.f-dropdown li a.nav-selected { color: #001863; background-color: #e2f2f6; }
+  #sfcu .v1 #ff-sidebar-right .ff-sidebar ul.f-dropdown li ul { margin-left: 0; padding-left: 0; background: white; list-style-type: none; }
+  #sfcu .v1 #ff-sidebar-right .ff-sidebar ul.f-dropdown li ul li { margin-left: 0; padding-left: 0; list-style-type: none; }
+  #sfcu .v1 #ff-sidebar-right .ff-sidebar ul.f-dropdown li ul li a { font-weight: 400; margin-left: 0; padding-left: 1.5em; color: #556770; background-color: white; }
+  /* =========== End Sidebar Area ============= */ }
+
+/* End Mobile */
+/*
+===========================================
+
+	Sidebar Tabs
+
+===========================================
+*/
+.extruder { position: fixed; cursor: default; background: url(../images/extruder_blank.png); background-color: white; background-color: rgba(255, 255, 255, 0.9); /* Extruder Content */ /*extruder Flap */ /* extruder Left */ /* extruder Right */ /*Extruder Panel*/ }
+
+.extruder .header { height: 35px; }
+
+.extruder .footer { display: none; height: 10px; }
+
+.extruder .extruder-content { z-index: 2; position: relative; display: none; padding-top: 1em; padding-right: 1em; padding-bottom: 1em; padding-left: 1em; background: white; background: rgba(255, 255, 255, 0.9); }
+
+.extruder .text { font: "museo-sans", "interface", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-size: 1rem; font-weight: 400; line-height: 1.4rem; }
+
+.extruder .text h1, .extruder .text h2, .extruder .text h3 { font-family: "museo-sans-rounded", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; margin: 0; padding: 0 0 .5rem 0; color: #001863; }
+
+.extruder .text h3 { font-size: 1.2rem; font-weight: 800; line-height: 1.4rem; text-transform: uppercase; }
+
+.extruder .text p { margin: 0; padding: 0 0 .5rem 0; color: #556770; }
+
+.extruder .text a { text-decoration: none; color: #004a9a; transition: all .3s ease-in-out; }
+
+.extruder .text a:hover { color: #009234; }
+
+.extruder .text table tbody tr:nth-of-type(even) { background-color: #e2f2f6; }
+
+.extruder .text ul { display: block; list-style-type: none; margin: 0; padding: .5rem 0; }
+
+.extruder .text ul li { display: block; margin: 0; padding-bottom: 1rem; color: #556770; }
+
+.extruder .text ul li a { display: inline-block; margin: 0; padding: .3rem 0; font-family: "museo-sans-rounded", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-weight: 900 !important; font-size: .9rem; line-height: 1; letter-spacing: .1rem; text-decoration: none; text-transform: uppercase; color: #001863; transition: all .3s ease-in-out; }
+
+.extruder .text ul li a:hover { color: #00b1bd; }
+
+.extruder .text ul li a img { margin-right: .8rem; vertical-align: middle; }
+
+.extruder.left, .extruder.right { height: 100%; background-color: white; background-color: rgba(255, 255, 255, 0.9); }
+
+.extruder .tab-close { position: relative; top: 0px; width: 15px; height: 15px; }
+
+.extruder .tab-close i { font-family: 'FontAwesome' !important; font-size: 1.5rem; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; color: #f4202b; cursor: pointer; transition: all 0.3s ease-in-out; }
+
+.extruder .tab-close i:hover { color: #ff8e1b; }
+
+.extruder .tab-content { margin-top: -15px; }
+
+.extruder .flap { z-index: 1; position: absolute; overflow: hidden; width: 35px; background-color: white; background-color: rgba(255, 255, 255, 0.9); font-family: "museo-sans-rounded"; letter-spacing: .2em; color: white; color: rgba(255, 255, 255, 0.9); cursor: pointer; }
+
+.extruder .flap .flapLabel { width: 100%; display: block; }
+
+.extruder.left .flap { right: 0; margin-right: -45px; padding: 10px 0 10px 10px; box-shadow: rgba(0, 0, 0, 0.3) -5px 10px 30px; }
+
+.extruder.left .flap .flapLabel { padding-top: 30px; left: -5px; }
+
+.extruder.left .extruder-content { border-right: 0px solid white; }
+
+.extruder.left.isOpened .extruder-content { box-shadow: rgba(0, 0, 0, 0.3) -5px 10px 30px; }
+
+.extruder.right .tab-close { left: 225px; }
+
+.extruder.right .flap { left: -45px; padding: 10px 0 10px 10px; box-shadow: rgba(0, 0, 0, 0.3) 5px 10px 30px; }
+
+.extruder.right .flap .flapLabel { padding-top: 20px; left: 0px; }
+
+.extruder.right .extruder-content { border-left: 0px solid white; }
+
+.extruder.right .ext_wrapper { right: 0; }
+
+.extruder.right.isOpened .extruder-content { box-shadow: rgba(0, 0, 0, 0.3) 5px 10px 30px; }
+
+.extruder .voice { position: relative; padding: 5px; padding-left: 10px; height: 27px; border-bottom: none; font-family: "museo-sans", "interface", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-size: 16px; color: white; }
+
+.extruder .voice:last-child { border-bottom: none; }
+
+.extruder .voice .disabled { cursor: default; }
+
+.extruder .voice.hover { background: url("../images/extruder_voiceHover.png") no-repeat top; }
+
+.extruder .voice.sel { background: url("../images/extruder_voiceHover.png") no-repeat top; }
+
+.extruder .voice img { float: left; margin-right: 15px; }
+
+.extruder .voice a.label { display: block; height: 30px; color: white; padding-top: 0; text-decoration: none; }
+
+.extruder .voice span.label { display: block; height: 30px; color: #d0cfcf; padding-top: 0; text-decoration: none; }
+
+.extruder .settingsBtn { display: block; position: absolute; width: 36px; height: 36px; background: url("../images/settingsBtn.png") no-repeat bottom; cursor: pointer; right: -3px; top: -4px; }
+
+.extruder .optionsPanel { display: none; }
+
+.extruder .optionsPanel .panelVoice a { text-decoration: none; display: block; color: #cccccc; padding: 8px; padding-left: 20px; font-size: 16px; cursor: pointer; }
+
+.extruder .optionsPanel .panelVoice a::hover { color: #fff; background: url("../images/red_op_50.png"); }
+
+#rates.extruder.left { top: 170px !important; }
+
+#rates.extruder.left .tab-close { left: 280px; }
+
+#rates.extruder.left .flap { height: 195px; border-left: 1px solid rgba(255, 255, 255, 0.9); border-top-right-radius: .8em; background-image: url(../images/bg-tab-flap-checkrates.png); background-repeat: no-repeat; }
+
+#rates.extruder.left .extruder-content { min-height: 300px; border-right-radius: .8em; }
+
+#rates.extruder.left.isOpened .extruder-content { box-shadow: rgba(0, 0, 0, 0.3) -5px 10px 30px; }
+
+#social.extruder.left { top: 390px !important; }
+
+#social.extruder.left .tab-close { left: 225px; }
+
+#social.extruder.left .flap { height: 195px; border-left: 1px solid rgba(255, 255, 255, 0.9); border-bottom-right-radius: .8em; background-image: url(../images/bg-tab-flap-getsocial.png); background-repeat: no-repeat; }
+
+#social.extruder.left .extruder-content { min-height: 300px; border-right-radius: .8em; }
+
+#social.extruder.left.isOpened .extruder-content { box-shadow: rgba(0, 0, 0, 0.3) -5px 10px 30px; }
+
+#banking.extruder.right { top: 230px !important; }
+
+#banking.extruder.right .account-access p { font-family: "museo-sans", "interface", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-size: 1rem; padding: 0 0 .5rem; }
+
+#banking.extruder.right .account-access p a { font-weight: 700 !important; text-decoration: none; color: #004a9a; transition: all 0.3s ease-in-out; }
+
+#banking.extruder.right .account-access p a:hover { color: #009234; }
+
+#banking.extruder.right .account-access .title p { font-family: "museo-sans-rounded", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-weight: 700 !important; }
+
+#banking.extruder.right .account-access .field input[type="text"], #banking.extruder.right .account-access .field input[type="password"] { font-family: "museo-sans", "interface", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-size: .9rem; color: #001863; padding: .5rem; width: 100%; border: none; background-color: #e2f2f6; border-radius: 0; transition: all 0.3s ease-in-out; }
+
+#banking.extruder.right .account-access .field input[type="text"]:hover, #banking.extruder.right .account-access .field input[type="password"]:hover { background-color: #e2f2f6; }
+
+#banking.extruder.right .account-access .field .button { font-family: "museo-sans-rounded", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-weight: 900 !important; font-size: .9rem; text-transform: uppercase; color: white; margin-top: .5rem; padding: .5rem 2rem; background-color: #001863; border: none; border-radius: 0; transition: all 0.3s ease-in-out; }
+
+#banking.extruder.right .account-access .field .button:hover { background-color: #009234; }
+
+#banking.extruder.right .flap { height: 265px; border-right: 1px solid rgba(255, 255, 255, 0.9); border-left-radius: .8em; background-image: url(../images/bg-tab-flap-onlinebanking.png); background-repeat: no-repeat; }
+
+#banking.extruder.right .extruder-content { min-height: 300px; border-left-radius: .8em; }
+
+#banking.extruder.right.isOpened .extruder-content { box-shadow: rgba(0, 0, 0, 0.3) 5px 10px 30px; }
+
+/* =========== End Sidebar Tabs =========== */
+@media only screen and (min-width: 40.063em) { /* =============== Tablet & Medium =============== */
+  /*
+===========================================
+
+	Layout
+
+===========================================
+*/
+  #sfcu .v1 #ff-main-content-left, #sfcu .v1 #ff-footer-top, #sfcu .v1 #ff-footer-bottom { padding-left: 2.5rem; }
+  #sfcu .v1 #ff-main-content-left { padding-right: 0; }
+  #sfcu .v1 #ff-footer-top, #sfcu .v1 #ff-footer-bottom { padding-right: 2.5rem; }
+  #home #sfcu .v1 #ff-banner { padding-right: inherit; padding-left: inherit; }
+  /*
+===========================================
+
+	Header & Nav
+
+===========================================
+*/
+  #sfcu .v1 { /* End #ff-header-wrap */ }
+  #sfcu .v1 #ff-header-wrap { z-index: 5; position: absolute; top: 0; left: 0; width: 100%; border-top: 0.2rem solid #001863; background: url(../images/bg-header.png) repeat-x; /* End .header-featured */ /* End nav */ }
+  #sfcu .v1 #ff-header-wrap .logo { width: 19%; height: 145px; padding: .5rem; background-color: white; text-align: center; }
+  #sfcu .v1 #ff-header-wrap .logo img { display: inline-block; width: auto; max-width: auto; height: 100%; }
+  #sfcu .v1 #ff-header-wrap .navigation { width: 81%; }
+  #sfcu .v1 #ff-header-wrap ul { margin-bottom: 0; }
+  #sfcu .v1 #ff-header-wrap .header-featured { width: 100%; background-color: white; }
+  #sfcu .v1 #ff-header-wrap .header-featured ul.breadcrumbs { float: right; margin: 0; padding: 0; border: none; background: none; border-radius: 0; }
+  #sfcu .v1 #ff-header-wrap .header-featured ul.breadcrumbs > *:before { content: none; color: #aaa; position: relative; top: 0; }
+  #sfcu .v1 #ff-header-wrap .header-featured ul.breadcrumbs > *:first-child:before { content: none; }
+  #sfcu .v1 #ff-header-wrap .header-featured ul.breadcrumbs > *:last-child:before { content: none; }
+  #sfcu .v1 #ff-header-wrap .header-featured ul.breadcrumbs > * a, #sfcu .v1 #ff-header-wrap .header-featured ul.breadcrumbs > * span { text-transform: none; }
+  #sfcu .v1 #ff-header-wrap .header-featured ul.breadcrumbs li { margin: 0; padding: 0; font-family: "museo-sans-rounded", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-size: .7rem; font-weight: 700 !important; /* &:nth-child(4) { display: none; } */ }
+  #sfcu .v1 #ff-header-wrap .header-featured ul.breadcrumbs li a, #sfcu .v1 #ff-header-wrap .header-featured ul.breadcrumbs li span { display: inline-block; height: 35px; padding: .4rem .2rem .4rem .2rem; color: #001863; text-decoration: none; border-left: 1px solid #e2f2f6; }
+  #sfcu .v1 #ff-header-wrap .header-featured ul.breadcrumbs li a:hover, #sfcu .v1 #ff-header-wrap .header-featured ul.breadcrumbs li span:hover { color: #009234; }
+  #sfcu .v1 #ff-header-wrap .header-featured ul.breadcrumbs li:first-child span a { padding-top: 0; }
+  #sfcu .v1 #ff-header-wrap .header-featured ul.breadcrumbs li:first-child a, #sfcu .v1 #ff-header-wrap .header-featured ul.breadcrumbs li:first-child span { border-left: none; }
+  #sfcu .v1 #ff-header-wrap .header-featured ul.breadcrumbs li:last-child { padding: 0; }
+  #sfcu .v1 #ff-header-wrap .header-featured ul.breadcrumbs li:last-child a { font-weight: 900 !important; font-size: .7rem; letter-spacing: 0; text-transform: uppercase; color: white; margin-left: .5rem; padding: .2rem .3rem 0 .3rem; background: #009234; }
+  #sfcu .v1 #ff-header-wrap .header-featured ul.breadcrumbs li:last-child a:before { display: inline-block; vertical-align: middle; font-family: "sun_federal_cu" !important; font-weight: normal; font-size: 1.5rem; line-height: 1; margin: 0; padding: 0; content: "\e607"; }
+  #sfcu .v1 #ff-header-wrap .header-featured ul.breadcrumbs li:last-child a:hover { color: #009234; background-color: #d8ecd3; }
+  #sfcu .v1 #ff-header-wrap .contain-to-grid { background-color: transparent; }
+  #sfcu .v1 #ff-header-wrap nav { /* 1st Level */ /* End section */ }
+  #sfcu .v1 #ff-header-wrap nav.top-bar { background-color: transparent; }
+  #sfcu .v1 #ff-header-wrap nav.top-bar ul.title-area { display: none; list-style-type: none; }
+  #sfcu .v1 #ff-header-wrap nav section.top-bar-section { /* End 1st Level */ }
+  #sfcu .v1 #ff-header-wrap nav section.top-bar-section ul.services-nav { display: block; position: relative; background-color: transparent !important; border-bottom-right-radius: 1.2rem; }
+  #sfcu .v1 #ff-header-wrap nav section.top-bar-section ul.services-nav li { text-align: center; /* 2nd Level */ /* End 2nd Level */ }
+  #sfcu .v1 #ff-header-wrap nav section.top-bar-section ul.services-nav li:hover { background-color: white; }
+  #sfcu .v1 #ff-header-wrap nav section.top-bar-section ul.services-nav li:hover > a { color: #001863; }
+  #sfcu .v1 #ff-header-wrap nav section.top-bar-section ul.services-nav li:hover > a i { color: #ff8e1b; }
+  #sfcu .v1 #ff-header-wrap nav section.top-bar-section ul.services-nav li.has-dropdown > a { padding-right: 15px !important; }
+  #sfcu .v1 #ff-header-wrap nav section.top-bar-section ul.services-nav li.has-dropdown > a:after { content: none; display: block; width: 0; height: 0; border: inset 5px; border-color: rgba(255, 255, 255, 0.8) transparent transparent transparent; border-top-style: solid; }
+  #sfcu .v1 #ff-header-wrap nav section.top-bar-section ul.services-nav li a { background-color: rgba(255, 255, 255, 0.8); border-right: 1px solid white; width: 100%; height: 110px; padding-top: .5rem; padding-bottom: 1.2rem; transition: all 0.3s ease-in-out; font-family: "museo-sans-rounded", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-weight: 900 !important; font-size: .8rem; text-transform: uppercase; line-height: 1; letter-spacing: 0; color: #004a9a; }
+  #sfcu .v1 #ff-header-wrap nav section.top-bar-section ul.services-nav li a:hover { background-color: white; }
+  #sfcu .v1 #ff-header-wrap nav section.top-bar-section ul.services-nav li a i { display: block; font-size: 3rem; padding-top: .15rem; padding-bottom: .5rem; color: #001863; transition: all 0.3s ease-in-out; }
+  #sfcu .v1 #ff-header-wrap nav section.top-bar-section ul.services-nav li a.nav-last { border-right: none; }
+  #sfcu .v1 #ff-header-wrap nav section.top-bar-section ul.services-nav li a.nav-path-selected { background-color: rgba(255, 255, 255, 0.2); }
+  #sfcu .v1 #ff-header-wrap nav section.top-bar-section ul.services-nav li a.nav-path-selected i { color: #ff8e1b; }
+  #sfcu .v1 #ff-header-wrap nav section.top-bar-section ul.services-nav li ul { margin: 0; padding: 0; box-shadow: rgba(0, 0, 0, 0.2) 0 8px 8px; border-bottom-radius: 1.2rem; }
+  #sfcu .v1 #ff-header-wrap nav section.top-bar-section ul.services-nav li ul li { margin: 0; padding: 0; text-align: left; }
+  #sfcu .v1 #ff-header-wrap nav section.top-bar-section ul.services-nav li ul li:hover { background-color: transparent; }
+  #sfcu .v1 #ff-header-wrap nav section.top-bar-section ul.services-nav li ul li a { background-color: white; border-right: none; height: auto; padding-top: 1rem; font-family: "museo-sans-rounded", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-weight: 500 !important; font-size: .7rem; text-transform: none; line-height: 1; letter-spacing: 0; }
+  #sfcu .v1 #ff-header-wrap nav section.top-bar-section ul.services-nav li ul li a:hover { background-color: #ff8e1b; }
+  #sfcu .v1 #ff-header-wrap nav section.top-bar-section ul.services-nav li ul li a.nav-last { border-bottom-radius: 1.2rem; }
+  #sfcu .v1 #ff-header-wrap nav section.top-bar-section ul.services-nav li ul li a.nav-path-selected { color: #ff8e1b; background-color: rgba(255, 255, 255, 0.9); }
+  /* ========= End Header & Navigation =========== */
+  /*
+===========================================
+
+	Banner / Feature Area
+
+===========================================
+*/
+  #sfcu .v1 { /* End ff-banner-wrap */ }
+  #sfcu .v1 #ff-banner-wrap { z-index: 1; overflow: hidden; position: relative; height: auto; padding-top: 180px; padding-bottom: 20px; /* End #ff-banner */ }
+  #sfcu .v1 #ff-banner-wrap.home { position: relative; width: 100%; height: 650px; margin: 0; padding: 0; }
+  #sfcu .v1 #ff-banner-wrap.home #ff-banner { padding-left: inherit; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner, #sfcu .v1 #ff-banner-wrap .slideshow-wrapper, #sfcu .v1 #ff-banner-wrap .orbit-overlay, #sfcu .v1 #ff-banner-wrap .orbit-container, #sfcu .v1 #ff-banner-wrap .orbit-slides-container, #sfcu .v1 #ff-banner-wrap .orbit-slides-container li { width: 100%; height: 100%; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner { padding-left: 2.5rem; /* End .bg-color */ }
+  #sfcu .v1 #ff-banner-wrap #ff-banner a.button { text-align: center !important; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .banner-title h1 { text-transform: uppercase; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .banner-photo { margin-bottom: 1rem; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .banner-photo .photo { height: 300px; border-radius: 1.2rem; overflow: hidden; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .button { display: block; max-width: 40%; margin: 0 auto; border-radius: 1rem; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .banner-description .button { margin: 0 1rem 1rem 0; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item { width: 100%; height: 100%; padding-bottom: 1rem; background-color: rgba(255, 255, 255, 0.9); overflow: hidden; border-radius: 1.2rem; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .header { text-align: center; background-color: #ff8e1b; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .header h3 { font-size: 1rem; font-weight: 400 !important; color: white; margin: 0; padding-top: .4rem; padding-bottom: .3rem; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .header h3 a { color: white; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .header h3 a:hover { color: #fff3d1; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .icon { padding-top: .5rem; padding-bottom: .5rem; text-align: center; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .disclosure { padding-top: .5rem; text-align: center; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .disclosure p { font-size: .8rem; margin: 0; padding: 0; color: rgba(85, 103, 112, 0.8); }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .term { text-align: center; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .term p { font-family: "museo-sans-rounded", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-size: 3.5rem; font-weight: 100 !important; line-height: 1; margin: 0; padding-top: .3rem; padding-bottom: .5rem; color: #001863; text-shadow: 0 3px 8px rgba(85, 103, 112, 0.5); }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .content { text-align: center; padding-left: 1rem; padding-right: 1rem; padding-bottom: 1rem; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .content ul, #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .content ol { display: block; width: 75%; text-align: left; margin: 0 auto; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .content ul li, #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .content ol li { text-align: left; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .link { text-align: center; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .link a.button { display: inline-block; float: none; color: white; max-width: none; margin: 0; padding-top: .5rem; padding-bottom: .5rem; border-radius: 1000px; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .clear { padding: 1px; line-height: 1; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper { /* .photo { height: 1000px; } */ }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .orbit-prev, #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .orbit-next { top: 45.5%; transition: all 0.3s ease-in-out; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .orbit-prev:hover, #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .orbit-next:hover { width: 45px; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .orbit-prev { left: 50px; border-right-radius: .5rem; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .orbit-prev > span { left: 50%; margin-left: -17px; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .orbit-next { right: 50px; border-left-radius: .5rem; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .image { position: absolute; top: 0; left: 0; z-index: 1; width: 100%; height: 100%; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container img { width: 100%; height: auto; margin: 0; padding: 0; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .orbit-caption { z-index: 2; width: 100%; margin-left: 2rem; padding: 0 0 0 0; background: none; border: 0 solid; position: relative; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); box-shadow: none; transition: all 0.3s ease-in-out; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .caption-bg { padding-top: .8rem; padding-bottom: .8rem; background-color: rgba(255, 255, 255, 0.7); border-radius: 1.8rem; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .caption-bg h2 { font-size: 3.2rem; font-weight: 100; line-height: 3.4rem; letter-spacing: -2px; margin: 0; padding: .2rem 0 .2rem 0; color: #001863; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .caption-bg h2 a { color: #001863; transition: all 0.3s ease-in-out; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .caption-bg h2 a:hover { color: #009234; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .description { display: block; margin-left: 2rem; padding-top: 5rem; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .description p { font-family: "museo-sans", "interface", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-weight: 500 !important; font-size: 1rem; font-style: italic; color: white; text-shadow: 0 2px 5px rgba(85, 103, 112, 0.5); }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .orbit-timer { display: none; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .orbit-bullets-container { z-index: 4; position: absolute; top: 560px; opacity: 1; width: 100%; margin: 0; padding: 0; background: none; border: 0 solid; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .orbit-bullets-container ol.orbit-bullets li { width: .7em; height: .7em; margin-right: .7em; cursor: pointer; background-color: white; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .orbit-bullets-container ol.orbit-bullets li:active { background-color: #ff8e1b; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .orbit-bullets-container ol.orbit-bullets li.active { background-color: #ffce00; }
+  /* ============ End Banner Area ============== */
+  /* Landing Page */
+  #sfcu .v1 .landing-container { position: relative; margin-top: -3.7rem; }
+  #sfcu .v1 .landing { min-height: 27rem; /* &:nth-of-type(4) .header { background-color: $scu-yellow; @include border-top-left-radius(.8em); } &:nth-of-type(5) .header { background-color: $scu-blue; } &:nth-of-type(6) .header { background-color: $scu-green; } &:last-of-type .header { @include border-top-right-radius(.8em); } */ }
+  #sfcu .v1 .landing .thumb img { width: 100%; height: auto; }
+  #sfcu .v1 .landing .thumb a { background-color: #b82527; }
+  #sfcu .v1 .landing .header { background-color: #b82527; }
+  #sfcu .v1 .landing:nth-of-type(odd) .thumb a { background-color: #b82527; }
+  #sfcu .v1 .landing:nth-of-type(odd) .header { background-color: #b82527; border-top-right-radius: 0; border-top-left-radius: .8rem; }
+  #sfcu .v1 .landing:nth-of-type(even) .thumb a { background-color: #f4202b; }
+  #sfcu .v1 .landing:nth-of-type(even) .header { background-color: #f4202b; border-top-right-radius: .8rem; border-top-left-radius: 0; }
+  #sfcu .v1 .landing:last-child { float: left; }
+  #sfcu .v1 .landing.four:nth-of-type(1) .thumb a { background-color: #b82527; }
+  #sfcu .v1 .landing.four:nth-of-type(1) .header { background-color: #b82527; border-top-left-radius: .8em; }
+  #sfcu .v1 .landing.four:nth-of-type(2) .thumb a { background-color: #f4202b; }
+  #sfcu .v1 .landing.four:nth-of-type(2) .header { background-color: #f4202b; }
+  #sfcu .v1 .landing.four:nth-of-type(3) .thumb a { background-color: #ff8e1b; }
+  #sfcu .v1 .landing.four:nth-of-type(3) .header { background-color: #ff8e1b; border-top-right-radius: 0; }
+  #sfcu .v1 .landing.four:nth-of-type(4) .thumb a { background-color: #ffce00; }
+  #sfcu .v1 .landing.four:nth-of-type(4) .header { background-color: #ffce00; border-top-left-radius: 0; border-top-right-radius: .8em; }
+  #sfcu .v1 .landing .header { min-height: 35px; }
+  #sfcu .v1 .landing .header h3 { font-size: 1em; font-weight: 400; text-transform: none; letter-spacing: 0; margin: 0; padding: .7rem 0 .4rem 0; }
+  #sfcu .v1 .landing .header h3 a { color: white; }
+  #sfcu .v1 .landing .header h3 a:hover { color: #fff3d1; }
+  #sfcu .v1 .landing .thumb { padding-top: 1rem; }
+  #sfcu .v1 .landing .thumb a { display: block; width: 100%; height: 100%; overflow: hidden; }
+  #sfcu .v1 .landing .thumb a img { border-radius: 0; opacity: 1; transition: all 0.5s ease-in-out; }
+  #sfcu .v1 .landing .thumb a:hover img { opacity: .6; transform: rotate(-2deg) scale(1.2); }
+  #sfcu .v1 .landing .copy { padding-top: 1rem; padding-bottom: 1rem; }
+  /* End Landing Page */
+  /* =============== End Tablet & Medium =============== */ }
+
+@media only screen and (min-width: 64.063em) { /* =============== Desktop =============== */
+  /*
+===========================================
+
+	Layout
+
+===========================================
+*/
+  #main-bg { z-index: 1; position: fixed; width: 100%; height: 1000px; background: url(../images/bg-main-home.png) repeat-x; }
+  .home #main-bg { z-index: 2; top: 655px; }
+  #sfcu .v1 #ff-banner, #sfcu .v1 #ff-footer-top, #sfcu .v1 #ff-footer-bottom { padding-right: inherit; padding-left: inherit; }
+  #sfcu .v1 #ff-main-content-left { padding-right: 0.9375rem; padding-left: 0.9375rem; }
+  /*
+===========================================
+
+	Header & Nav
+
+===========================================
+*/
+  #sfcu .v1 { /* End #ff-header-wrap */ }
+  #sfcu .v1 #ff-header-wrap { z-index: 5; position: absolute; top: 0; left: 0; border-top: 0.2rem solid #001863; background: url(../images/bg-header.png) repeat-x; /* End .header-featured */ /* End nav */ }
+  #sfcu .v1 #ff-header-wrap .logo { width: 19%; height: auto; padding: 1em; border-bottom-radius: 1.2em; background-color: white; text-align: center; }
+  #sfcu .v1 #ff-header-wrap .logo img { display: inline-block; }
+  #sfcu .v1 #ff-header-wrap .navigation { width: 81%; }
+  #sfcu .v1 #ff-header-wrap ul { margin-bottom: 0; }
+  #sfcu .v1 #ff-header-wrap .header-featured ul.breadcrumbs { float: right; height: 35px; margin: 0; padding: 0; }
+  #sfcu .v1 #ff-header-wrap .header-featured ul.breadcrumbs > * a, #sfcu .v1 #ff-header-wrap .header-featured ul.breadcrumbs > * span { text-transform: uppercase; }
+  #sfcu .v1 #ff-header-wrap .header-featured ul.breadcrumbs li { margin: 0; padding: 0; font-size: .8rem; font-weight: 700 !important; }
+  #sfcu .v1 #ff-header-wrap .header-featured ul.breadcrumbs li a, #sfcu .v1 #ff-header-wrap .header-featured ul.breadcrumbs li span { height: 35px; padding: .4rem .3rem .4rem .3rem; }
+  #sfcu .v1 #ff-header-wrap .header-featured ul.breadcrumbs li:first-child span { padding: .4rem .3rem .4rem 0; }
+  #sfcu .v1 #ff-header-wrap .header-featured ul.breadcrumbs li:first-child span a { padding: 0; }
+  #sfcu .v1 #ff-header-wrap .header-featured ul.breadcrumbs li:last-child { padding: 0; }
+  #sfcu .v1 #ff-header-wrap .header-featured ul.breadcrumbs li:last-child a { font-size: .8rem; font-weight: 900 !important; letter-spacing: 0; text-transform: uppercase; margin-left: .5rem; padding: .2rem .5rem 0 .3rem; }
+  #sfcu .v1 #ff-header-wrap .header-featured ul.breadcrumbs li:last-child a:before { font-size: 1.8rem; margin: 0; padding: 0; }
+  #sfcu .v1 #ff-header-wrap nav { /* 1st Level */ /* End section */ }
+  #sfcu .v1 #ff-header-wrap nav section.top-bar-section { /* End 1st Level */ }
+  #sfcu .v1 #ff-header-wrap nav section.top-bar-section ul.services-nav { display: block; position: relative; }
+  #sfcu .v1 #ff-header-wrap nav section.top-bar-section ul.services-nav li { /* 2nd Level */ /* End 2nd Level */ }
+  #sfcu .v1 #ff-header-wrap nav section.top-bar-section ul.services-nav li.has-dropdown > a { padding-right: 15px !important; }
+  #sfcu .v1 #ff-header-wrap nav section.top-bar-section ul.services-nav li.has-dropdown > a:after { content: none; display: block; width: 0; height: 0; }
+  #sfcu .v1 #ff-header-wrap nav section.top-bar-section ul.services-nav li a { padding-top: .5rem; padding-bottom: 1.2rem; font-weight: 900 !important; font-size: .9rem; text-transform: uppercase; letter-spacing: .1rem; }
+  #sfcu .v1 #ff-header-wrap nav section.top-bar-section ul.services-nav li a i { display: block; font-size: 3.8rem; padding-top: .15rem; padding-bottom: .15rem; }
+  #sfcu .v1 #ff-header-wrap nav section.top-bar-section ul.services-nav li ul li a { font-size: .9rem; height: auto; }
+  /* ========= End Header & Navigation =========== */
+  /*
+===========================================
+
+	Banner / Feature Area
+
+===========================================
+*/
+  #sfcu .v1 { /* End ff-banner-wrap */ }
+  #sfcu .v1 #ff-banner-wrap { /* End #ff-banner */ }
+  #sfcu .v1 #ff-banner-wrap.home { position: fixed; width: 100%; height: 910px; margin: 0; padding: 0; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner, #sfcu .v1 #ff-banner-wrap .slideshow-wrapper, #sfcu .v1 #ff-banner-wrap .orbit-overlay, #sfcu .v1 #ff-banner-wrap .orbit-container, #sfcu .v1 #ff-banner-wrap .orbit-slides-container, #sfcu .v1 #ff-banner-wrap .orbit-slides-container li { width: 100%; height: 100%; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner { padding-left: inherit; /* End .bg-color */ }
+  #sfcu .v1 #ff-banner-wrap #ff-banner a.button { text-align: center !important; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .banner-title h1 { text-transform: uppercase; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .banner-photo { margin-bottom: 1rem; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .banner-photo .photo { height: 300px; border-radius: 1.2rem; overflow: hidden; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .button { display: block; max-width: 40%; margin: 0 auto; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .banner-description .button { margin: 0 1rem 1rem 0; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item { width: 100%; height: 100%; padding-bottom: 1rem; background-color: rgba(255, 255, 255, 0.9); overflow: hidden; border-radius: 2rem; box-shadow: 1rem 1rem 0 rgba(255, 255, 255, 0.5); }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .header { text-align: center; background-color: #004a9a; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .header h3 { font-size: 1.2rem; margin: 0; padding-top: .4rem; padding-bottom: .3rem; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .header h3 a { color: white; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .header h3 a:hover { color: #fff3d1; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .icon { padding-top: .5rem; padding-bottom: .5rem; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .disclosure { padding-top: .5rem; text-align: center; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .disclosure p { font-size: .8rem; margin: 0; padding: 0; color: rgba(85, 103, 112, 0.8); }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .term { text-align: center; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .term p { font-family: "museo-sans-rounded", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-size: 3.5rem; font-weight: 100 !important; line-height: 1; margin: 0; padding-top: .3rem; padding-bottom: .5rem; color: #001863; text-shadow: 0 3px 8px rgba(85, 103, 112, 0.5); }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .content { text-align: center; padding-left: 1rem; padding-right: 1rem; padding-bottom: 1rem; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .content ul, #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .content ol { display: block; width: 75%; text-align: left; margin: 0 auto; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .content ul li, #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .content ol li { text-align: left; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .link { text-align: center; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .link a.button { display: inline-block; float: none; color: white; max-width: none; margin: 0; padding-top: .5rem; padding-bottom: .5rem; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .feature-item .clear { padding: 1px; line-height: 1; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper { /* .photo { height: 1000px; } */ }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .orbit-prev, #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .orbit-next { top: 45.5%; transition: all 0.3s ease-in-out; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .orbit-prev:hover, #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .orbit-next:hover { width: 45px; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .orbit-prev { left: 50px; border-right-radius: .5rem; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .orbit-prev > span { left: 50%; margin-left: -17px; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .orbit-next { right: 50px; border-left-radius: .5rem; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .orbit-caption { margin-left: 0; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .orbit-timer { display: block; position: relative; top: -315px; right: 7px; width: 140px; height: 3px; z-index: 4; margin: 0 auto; background-color: white; background-color: rgba(255, 255, 255, 0.5); }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .orbit-timer .orbit-progress { top: 0px; right: 0px; background-color: #ffce00; background-color: #ffce00; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .orbit-timer > span { right: -15px; top: -7px; }
+  #sfcu .v1 #ff-banner-wrap #ff-banner .slideshow-wrapper .orbit-overlay .orbit-container .orbit-timer.paused > span { right: -20px; }
+  /* ============ End Banner Area ============== */
+  /* Landing Page */
+  #sfcu .v1 .landing-container { position: relative; margin-top: 1.5rem; overflow: auto; }
+  #sfcu .v1 .landing { min-height: 27rem; /* &:nth-of-type(4) .header { background-color: $scu-yellow; @include border-top-left-radius(.8em); } &:nth-of-type(5) .header { background-color: $scu-blue; } &:nth-of-type(6) .header { background-color: $scu-green; } &:last-of-type .header { @include border-top-right-radius(.8em); } */ }
+  #sfcu .v1 .landing .thumb a { background-color: #b82527; }
+  #sfcu .v1 .landing .header { background-color: #b82527; }
+  #sfcu .v1 .landing:nth-of-type(3n+1) .thumb a { background-color: #b82527; }
+  #sfcu .v1 .landing:nth-of-type(3n+1) .header { background-color: #b82527; border-top-right-radius: 0; border-top-left-radius: .8em; }
+  #sfcu .v1 .landing:nth-of-type(3n+2) .thumb a { background-color: #f4202b; }
+  #sfcu .v1 .landing:nth-of-type(3n+2) .header { background-color: #f4202b; border-top-right-radius: 0; border-top-left-radius: 0; }
+  #sfcu .v1 .landing:nth-of-type(3n+3) .thumb a { background-color: #ff8e1b; }
+  #sfcu .v1 .landing:nth-of-type(3n+3) .header { background-color: #ff8e1b; border-top-right-radius: .8em; border-top-left-radius: 0; }
+  #sfcu .v1 .landing:last-child { float: left; border-top-right-radius: .8em; }
+  #sfcu .v1 .landing:last-child .header { border-top-right-radius: .8em !important; }
+  #sfcu .v1 .landing.four:nth-of-type(1) .thumb a { background-color: #b82527; }
+  #sfcu .v1 .landing.four:nth-of-type(1) .header { background-color: #b82527; border-top-left-radius: .8em; }
+  #sfcu .v1 .landing.four:nth-of-type(2) .thumb a { background-color: #f4202b; }
+  #sfcu .v1 .landing.four:nth-of-type(2) .header { background-color: #f4202b; }
+  #sfcu .v1 .landing.four:nth-of-type(3) .thumb a { background-color: #ff8e1b; }
+  #sfcu .v1 .landing.four:nth-of-type(3) .header { background-color: #ff8e1b; border-top-right-radius: 0; }
+  #sfcu .v1 .landing.four:nth-of-type(4) .thumb a { background-color: #ffce00; }
+  #sfcu .v1 .landing.four:nth-of-type(4) .header { background-color: #ffce00; border-top-left-radius: 0; border-top-right-radius: .8em; }
+  #sfcu .v1 .landing .header { min-height: 35px; }
+  #sfcu .v1 .landing .header h3 { font-size: 1.2rem; font-weight: 400; line-height: 1.8rem; text-transform: none; letter-spacing: 0; margin: 0; padding: .6rem 0 .6rem 0; }
+  #sfcu .v1 .landing .header h3 a { color: white; }
+  #sfcu .v1 .landing .header h3 a:hover { color: #fff3d1; }
+  #sfcu .v1 .landing .thumb { padding-top: 1rem; }
+  #sfcu .v1 .landing .thumb a { display: block; width: 100%; height: 100%; overflow: hidden; }
+  #sfcu .v1 .landing .thumb a img { border-radius: 0; opacity: 1; transform: scale(1.1); transition: all 0.3s ease-in-out; }
+  #sfcu .v1 .landing .thumb a:hover img { opacity: .8; transform: scale(1); }
+  #sfcu .v1 .landing .copy { padding-top: 1rem; padding-bottom: 1rem; }
+  /* End Landing Page */
+  /* End Desktop */ }
+
+/* Print Media Query */
+/* ========= End Print ========== */
+/********** END **********/
